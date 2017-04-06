@@ -1,0 +1,434 @@
+  <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+ <body onLoad="MM_preloadImages('imagenes/contaminacionagua.jpg','imagenes/contaminacionsuelo1.jpg','imagenes/contaminacionaire1.jpg','imagenes/contaminacionradiactiva1.jpg','imagenes/contaminacionauditiva1.jpg','imagenes/contaminacionluminica1.jpg')">
+
+  <div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>CONTAMINACION</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h2>Contaminacion</h2>
+      <div>
+       <p>Esta es una imagen sobre contaminacion</p>
+       <br>
+     </div>
+     <div>
+      <div align="center">
+      <img src="imagenes/contaminacion.jpg" width="83%" height="51%"> </div>
+       </div>
+   </div>
+  </div>
+  <div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Definicion</h2>
+         <p>Concepto basico de la contaminacion</p>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Tipos de contaminacion</h2>
+        <p>Diferentes tipos de contaminacion</p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Consecuencias</h2>
+        <p>Afectaciones de la contaminacion</p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Medidas correctivas</h2>
+        <p>Medidas que se han generado</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Regla de las 3 "R"</h2>
+        <p> Reducir-Reciclar-Reutilizar</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>La contaminacion en mi entorno</h2>
+         <p>Mis propuestas</p>
+       </a>
+     </li>
+     </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+     <img src="imagenes/logo.png" width="46" height="46"> </div>
+     <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Tapia Ramirez Sonia</h4>
+     </div>
+   </div>
+   </div>
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>DEFINICION DE CONTAMINACION</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <h2>¿Que es la contaminacion?</h2>
+         <p> La Contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal. </p>
+       <img src="imagenes/contaminacion-ambiental.jpg" width="272" height="156"> </div>
+     </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres, STR</h4>
+     </div>
+   </div>
+  </div>
+  
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1>Tipos de contaminacion</h1>
+      </div>
+      <div data-role="content" align="center">
+        <div>
+          <h3>Contaminacion(tipo): Agua,aire,suelo,radiactiva,sonora,luminica y visual.</h3>
+          </div>
+        </div>
+        
+        <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h4>Contaminacion del AGUA</h4>
+      <div>
+       <h3>Contaminacion del AGUA</h3>
+       <p>La contaminación hídrica o contaminación del agua es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.</p>
+       <br>
+     </div>
+     <div>
+     <div align="center">  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contagua','','imagenes/contaminacionagua.jpg',1)"><img src="imagenes/contaminacionagua1.jpg" width="260" height="151" id="contagua"></a></div>
+   </div>
+   </div>
+  </div>  <!--01--> 
+  
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h4>Contaminacion del SUELO</h4>
+      <div>
+       <h3>Contaminacion del SUELO</h3>
+       <p>La contaminación del suelo es la introducción de sustancias extrañas a la superficie terrestre. Estos elementos perjudican de forma grave la salud de las personas, de animales y plantas. Muchas veces este tipo de contaminación entra en contacto con el agua potable de estos sitios agravando la situación.</p>
+       <br>
+     </div>
+     <div>
+       <div align="center"> 
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contsuelo','','imagenes/contaminacionsuelo1.jpg',1)"><img src="imagenes/contaminacionsuelo.jpg" width="263" height="150" id="contsuelo"></a> </div>
+       </div>
+   </div>
+  </div>  <!--02-->
+  
+  
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h4>Contaminacion del AIRE</h4>
+      <div>
+       <h3>Contaminacion del AIRE</h3>
+       <p>La contaminación del aire es una mezcla de partículas sólidas y gases en el aire. Las emisiones de los automóviles, los compuestos químicos de las fábricas, el polvo, el polen y las esporas de moho pueden estar suspendidas como partículas.</p>
+       <br>
+     </div>
+     <div>
+      <div align="center"> 
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contaire','','imagenes/contaminacionaire1.jpg',1)"><img src="imagenes/contaminacionaire.jpg" width="265" height="168" id="contaire"></a></div>
+       </div>
+   </div>
+  </div>  <!--03-->
+  
+     <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h4>Contaminacion RADIACTIVA</h4>
+      <div>
+       <h3>Contaminacion RADIACTIVA</h3>
+       <p>Se denomina contaminación radiactiva o contaminación nuclear a la presencia no deseada de sustancias radioactivas en el entorno. Esta contaminación puede proceder de radioisótopos naturales o artificiales.</p>
+       <br>
+     </div>
+     <div>
+        <div align="center"> 
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contradiactiva','','imagenes/contaminacionradiactiva1.jpg',1)"><img src="imagenes/contaminacionradiactiva.jpg" width="262" height="169" id="contradiactiva"></a></div>
+        </div>
+   </div>
+  </div>  <!--04-->
+  
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h4>Contaminacion SONORA</h4>
+      <div>
+       <h3>Contaminacion SONORA</h3>
+       <p>El término "contaminación sonora" hace referencia al ruido (entendido como sonido excesivo y molesto), provocado por las actividades humanas (tráfico, industrias, locales de ocio, aviones,barcos, entre otros.) que produce efectos negativos sobre la salud auditiva, física y mental de los seres vivos.</p>
+       <br>
+     </div>
+      <div>
+       <div align="center"> 
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contsonora','','imagenes/contaminacionauditiva1.jpg',1)"><img src="imagenes/contaminacionauditiva.jpg" width="253" height="165" id="contsonora"></a></div>
+    </div>
+   </div>
+  </div>  <!--05-->
+  
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h4>Contaminacion LUMINICA</h4>
+      <div>
+       <h3>Contaminacion LUMINICA</h3>
+       <p>La contaminación lumínica es el brillo o resplandor de luz en el cielo nocturno producido por la reflexión y difusión de luz artificial en los gases y en las partículas del aire por el uso de luminarias inadecuadas o por excesos de iluminación.</p>
+       <br>
+     </div>
+      <div>
+       <div align="center"> 
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contluminica','','imagenes/contaminacionluminica1.jpg',1)"><img src="imagenes/contaminacionluminica.jpg" width="264" height="160" id="contluminica"></a></div>
+      </div>
+   </div>
+  </div>  <!--06-->
+  
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h4>Contaminacion VISUAL</h4>
+      <div>
+       <h3>Contaminacion VISUAL</h3>
+       <p>La contaminación visual es todo aquello que afecta o perturba la visualización de una determinada zona o rompe la estética del paisaje. Por desgracia cada vez nos encontramos más con este problema tanto en las grandes ciudades como en las zonas rurales.</p>
+       <br>
+     </div>
+      <div>
+       <div align="center"> 
+      <img src="imagenes/contaminacionvisual.jpg" width="250" height="163"></div>
+      </div>
+   </div>
+  </div>  <!--07-->
+  
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Tres, STR</h4>
+      </div>
+        </div>
+     </div>
+     
+          
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>CONSECUENCIAS</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div>
+            <h2>Consecuencia de la Contaminacion</h2></div>
+            <ul>
+            <li> Problemas para la salud </li>
+            <li> La contaminación afecta al suelo y al agua </li>
+            <li> La contaminación afecta al clima </li>
+            </ul>
+          </div>
+          
+     <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h4>CALENTAMIENTO GLOBAL</h4>
+      <div>
+       <h3>Calentamiento global</h3>
+       <p>¿Qué es el Calentamiento Global?
+El término Calentamiento Global se refiere al aumento gradual de las temperaturas de la atmósfera y océanos de la Tierra que se ha detectado en la actualidad, además de su continuo aumento que se proyecta a futuro.</p>
+           <img src="imagenes/calentamientoglobal.jpg" width="383" height="243">
+       <p>Si se revisa el gráfico de las temperaturas de la superficie terrestre de los últimos 100 años, se observa un aumento de aproximadamente 0.8ºC, y que la mayor parte de este aumento ha sido en los últimos 30 años.
+La proyecciones a partir de modelos de clima fueron resumidos en el Cuarto Reporte del IPCC (Panel Intergubernamental sobre Cambio Climático) en el 2007. Indican que la temperatura global probablemente seguirá aumentando durante el siglo XXI, el aumento sería de entre 1.1 y 2.9ºC en el escenario de emisiones más bajo y entre 2.4 y 6.4ºC en el de mayores emisiones.</p>
+       <img src="imagenes/calentamientoglobal1.jpg" width="429" height="249"><br>
+     </div>
+     </div>
+     </div>
+<!--08-->
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Tres, STR</h4>
+        </div>
+         </div>
+       </div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Medidas correctivas</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <h2>Estas son algunas de las medidas que pueden contribuir al cuidado del ambiente.</h2>
+          <ul>
+    <li> Hoy no circula</li>
+    <p> Cierto numero de autos con determinada placa, no circula en los estados para así evitar la contaminacion. </p>
+    <li> Uso de aparatos que funcionan con energia solar <li>
+    <li> RECICLAGE </li>
+    <li> Consumir productos naturales </li>
+</ul></div>
+<p> Para más informacion consulta las paginas siguientes: </p>
+<h2> GreenPeace </h2>
+  
+<a href ="http://www.greenpeace.org/mexico/es/Campanas/Bosques/?gclid=CLOhyLe5jdMCFQqFaQodIL8Fuw" target="_self"> Ir a la pagina de GreenPeace</a> </div>
+<div align="center">
+<h2> SEMARNAT </h2>
+<a href ="http://www.gob.mx/semarnat" target="_self"> Ir a la pagina de SEMARNAT  </a>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Tres, STR</h4>
+        </div>
+         </div>
+       </div>
+</div>
+</div>
+    
+  
+  
+  
+       <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>REGLA DE LAS 3 "R"</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div>
+            <h2> Reducir - Reciclar - Reutilizar </h2></div>
+             <div align="center"> 
+          <img src="imagenes/regla3r.jpg" width="286" height="124">
+          </div>
+           </div>
+           <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h3>REDUCIR</h3>
+      <div>
+       <p> Lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, a la vez que también la tiene con nuestro bolsillo.</p>
+       <br>
+     </div>
+     <div>
+      <div align="center"> 
+       <img src="imagenes/reducir.jpg" width="284" height="165"></div>
+       </div>
+   </div>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h3>RECICLAR</h3>
+      <div>
+       <p>Consiste en el proceso de someter los materiales a un proceso en el cual se puedan volver a utilizar, reduciendo de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, mas basura en un futuro.</p>
+       <br>
+     </div>
+     <div>
+ <div align="center"> 
+      <img src="imagenes/reciclar.jpg" width="280" height="161"></div>
+      </div>
+   </div>
+  </div>
+  
+   
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h3>REUTILIZAR</h3>
+      <div>
+       <p>Al decir reutilizar, nos estamos refiriendo a poder volver a utilizar las cosas y darles la mayor utilidad posible antes de que llegue la hora de deshacernos de ellas, dado que al disminuir el volumen de la basura.</p>
+       <br>
+     </div>
+     
+     <div>
+      <div align="center"> 
+     <img src="imagenes/reutilizar.jpg" width="272" height="180"></div>
+     </div>
+   </div>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicacion Tres, STR</h4>
+        </div>
+         </div>
+       </div>
+</div>
+  </div>  
+  </div>
+  </div>
+  
+       
+
+       
+        
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>La contaminacion en mi entorno</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <h2>La contaminacion en mi entorno</h2>
+         <h3>Mis propuestas</h3>
+         <ul>
+         <li> Platicas para concientizar a la comunidad.</li>  
+         <li> Poner botes de basura en las tiendas.</li>
+         <li> Limpiar (Por turnos) las coladeras.</li>  
+         </ul>
+         
+         <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/mientorno1.jpg" alt="mientorno1" title="mientorno1" id="wows1_0"/></li>
+		<li><img src="data1/images/mientorno2.jpg" alt="mientorno2" title="mientorno2" id="wows1_1"/></li>
+		<li><img src="data1/images/mientorno3.jpg" alt="mientorno3" title="mientorno3" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/mientorno4.jpg" alt="responsive slider" title="mientorno4" id="wows1_3"/></a></li>
+		<li><img src="data1/images/mientorno5.jpg" alt="mientorno5" title="mientorno5" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="mientorno1"><span><img src="data1/tooltips/mientorno1.jpg" alt="mientorno1"/>1</span></a>
+		<a href="#" title="mientorno2"><span><img src="data1/tooltips/mientorno2.jpg" alt="mientorno2"/>2</span></a>
+		<a href="#" title="mientorno3"><span><img src="data1/tooltips/mientorno3.jpg" alt="mientorno3"/>3</span></a>
+		<a href="#" title="mientorno4"><span><img src="data1/tooltips/mientorno4.jpg" alt="mientorno4"/>4</span></a>
+		<a href="#" title="mientorno5"><span><img src="data1/tooltips/mientorno5.jpg" alt="mientorno5"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+       
+     </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Aplicacion Tres, STR</h4>
+     </div>
+   </div>
+  </div>
+
+
+             
+</body>
+ </html>
